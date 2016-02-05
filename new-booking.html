@@ -71,20 +71,12 @@
                                 <select class="form-control  form-control-custome" required="true" id="house_id" name="house_id"><option value="1">Eengezinswoning</option><option value="2">Vrijstaande woning</option><option value="3">Klein appartement (&lt;80 m2)</option><option value="4">Groot appartement (&gt;80 m2)</option></select>
                             </div>
                             <div class="col-xs-12">
-                                <div id="number_persons_select" data-hours="0.25" class="input-group number-spinner mbt15">
-                                    <label id="number_persons" class="booking-lb-text">Aantal personen:</label>
-                                        <input class="form-control text-right form-control-custome booking-bold" placeholder="" required="true" id="number_persons" readonly="readonly" name="number_persons" type="text" value="4">
-                                        <span class="input-group-btn">
-                                            <button type="button" class="btn btn-default booking-btn1" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
-                                        </span>
-                                        <span class="input-group-btn">
-                                            <button type="button" class="btn btn-default booking-btn2" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
-                                        </span>
-                                </div>
+                                <label id="number_persons">Aantal inwonenden:</label>
+                                <input class="form-control form-control-custome" required="true" id="number_persons" name="number_persons" type="number" min="1" max="10">
                             </div>
                             <div class="col-xs-12">
                                 <label for="exampleInputEmail1">Hoeveel uur hulp wilt u?</label>
-                                <p>Wij adviseren u <span id="recommendedhours" class="booking-bold">3.00</span> uur hulp aan</p>
+                                <p>Wij adviseren u <span id="recommendedhours" class="booking-bold">3.00</span> uur hulp aan, op basis van uw type woning en aantal inwonenden</p>
                                 <select class="form-control  form-control-custome" required="true" id="cleaning_hours" name="cleaning_hours"><option value="2">2 uur</option><option value="2.25">2.25 uur</option><option value="2.5">2.5 uur</option><option value="2.75">2.75 uur</option><option value="3" selected="selected">3 uur</option><option value="3.25">3.25 uur</option><option value="3.5">3.5 uur</option><option value="3.75">3.75 uur</option><option value="4">4 uur</option><option value="4.25">4.25 uur</option><option value="4.5">4.5 uur</option><option value="4.75">4.75 uur</option><option value="5">5 uur</option><option value="5.25">5.25 uur</option><option value="5.5">5.5 uur</option><option value="5.75">5.75 uur</option><option value="6">6 uur</option><option value="6.25">6.25 uur</option><option value="6.5">6.5 uur</option><option value="6.75">6.75 uur</option><option value="7">7 uur</option><option value="7.25">7.25 uur</option><option value="7.5">7.5 uur</option><option value="7.75">7.75 uur</option><option value="8">8 uur</option><option value="8.25">8.25 uur</option><option value="8.5">8.5 uur</option><option value="8.75">8.75 uur</option><option value="9">9 uur</option><option value="9.25">9.25 uur</option><option value="9.5">9.5 uur</option><option value="9.75">9.75 uur</option><option value="10">10 uur</option></select>
                             </div>
                             <div class="col-xs-4">
@@ -111,7 +103,6 @@
                                     <option value="2016">2016</option>
                                     <option value="2017">02</option>
                                 </select>
-
                             </div>
                             <div class="col-xs-12">
                                 <label for="timeslot">Tussen welke tijden wilt u geholpen worden?</label>
